@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Wish Generator</title>
+  <!-- ✅ Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-pink-200 via-rose-200 to-amber-200 font-sans">
+
+  <div class="bg-white shadow-2xl rounded-2xl p-8 text-center w-96">
+    <h1 class="text-3xl font-bold text-pink-600 mb-3">🎂 Birthday Wish Generator 🎉</h1>
+    <!-- <p class="text-gray-600 mb-6">Click the button to get a random wish!</p> -->
+
+    <button 
+      onclick="showWish()" 
+      class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-2 rounded-lg transition">
+      Generate Wish
+    </button>
+
+    <div id="output" class="mt-6 text-lg text-gray-700 font-medium bg-pink-50 p-4 rounded-lg min-h-[80px] flex items-center justify-center">
+      Your birthday wish will appear here...
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
